@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.row {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(250, 250, 250);
+    width: 210px;
+    transition: 0.5s linear;
+}
+
+.col:hover {
+    z-index: 1;
+    transform: scale(1.08);
+}
+
+.col img {
+    border-radius: 10px;
+    width: 210px;
+    height: 160px;
+}
+
+button {
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.navigation {
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(49, 49, 49, 0.9);
+    width: 100%;
+    position: fixed;
+}
+
+.pagenumber{
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.card-text {
+    font-weight: 600;
+}
+
+.alive::before {
+    content: "🟢";
+}
+.dead::before {
+    content: "🔴";
+
+}
+.unknown::before {
+    content: "🔘";
+}
+
+.card-subs {
+    color: rgb(198, 198, 198);
+}
